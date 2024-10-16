@@ -1,0 +1,18 @@
+.list {
+  display: flex;
+  gap: 24px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: white;
+  stroke: black;
+}
+
+.iconUser {
+  width: 24px;
+  height: 24px;
+  fill: black;
+  stroke: white;
+}

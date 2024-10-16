@@ -1,0 +1,20 @@
+.container {
+  margin-top: 72px;
+  margin-bottom: 120px;
+}
+
+.title {
+  font-weight: 200;
+  font-size: 48px;
+  line-height: 54px;
+}
+
+.NewProductsBtn {
+  background-color: var(--main-text);
+  color: var(--main-bg);
+  border: none;
+  padding: 8px 40px;
+  border-radius: 8px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}

@@ -1,0 +1,85 @@
+.iconPosition1 {
+  width: 24px;
+  height: 24px;
+  fill: white;
+  stroke: black;
+  top: 14px;
+  right: 77px;
+  position: absolute;
+}
+
+.iconPosition2 {
+  width: 24px;
+  height: 24px;
+  fill: white;
+  stroke: black;
+  top: 14px;
+  right: 41px;
+  position: absolute;
+}
+
+.imgCard {
+  width: 175px;
+  height: 205px;
+}
+
+.container {
+  padding: 20px 32px 20px 15px;
+  position: relative;
+}
+
+.title {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  width: 164px;
+}
+
+.taste {
+  margin-bottom: 4px;
+  font-size: 16px;
+  line-height: 20px;
+  margin-right: 1;
+}
+
+.containerPrice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.btnBy {
+  background-color: transparent;
+  border: 2px solid var(--accent);
+  color: var(--main-text);
+  border-radius: 8px;
+  padding: 8px 16px;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerTaste {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  fill: black;
+  stroke: white;
+}

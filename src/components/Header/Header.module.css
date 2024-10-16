@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  border-bottom: 1px solid var(--disabled-color);
+}
+
+.iconMenu {
+  width: 24px;
+  height: 24px;
+}
+
+.shopName {
+  width: 76px;
+  font-weight: 700;
+  font-family: "KyivType Sans", sans-serif;
+  size: 18px;
+  line-height: 20px;
+  margin-left: 41px;
+  margin-right: 80px;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--accent);
+  background-image: url("../../assets/bg-smoke.png");
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: contain;
+  -webkit-text-fill-color: transparent;
+}

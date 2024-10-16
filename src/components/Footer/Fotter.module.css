@@ -1,0 +1,105 @@
+.container {
+  border-top: 1px solid var(--disabled-color);
+  width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.containerSchedule {
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+.phone {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.schedule {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.svgList {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.iconInst {
+  width: 25px;
+  height: 25px;
+  fill: white;
+  stroke: black;
+}
+
+.iconTg {
+  width: 28px;
+  height: 28px;
+  fill: black;
+  stroke: white;
+}
+
+.iconFc {
+  width: 28px;
+  height: 28px;
+  fill: black;
+  stroke: white;
+}
+
+.category {
+  margin-bottom: 24px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.categoryList {
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.categoryLink {
+  color: var(--disabled-color);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.info {
+  margin-bottom: 40px;
+}
+
+.footer {
+  background-color: var(--main-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.iconC {
+  width: 16px;
+  height: 16px;
+}
+
+.textT {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--accent);
+}

@@ -1,0 +1,32 @@
+.backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: rgba(4, 4, 4, 0.4);
+}
+
+.backdropVisible {
+  display: block;
+}
+
+@media (min-width: 1440px) {
+  .backdropVisible {
+    display: none;
+  }
+}
+
+.mobileMenuWrap {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  min-width: 200px;
+  height: 100%;
+  background-color: var(--orange-dark);
+  z-index: 100;
+}
