@@ -1,15 +1,30 @@
-@import "../node_modules/modern-normalize/modern-normalize.css";
+@import '../node_modules/modern-normalize/modern-normalize.css';
 
 /* Fonts */
 
 @font-face {
-  font-family: "KyivType Sans";
-  src: url("./fonts/KyivTypeSans-VarGX.ttf") format("truetype");
+  font-family: 'KyivType Sans';
+  src: url('./fonts/KyivTypeSans-VarGX.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "IstokWeb-Regular";
-  src: url("./fonts/IstokWeb-Regular.ttf") format("truetype");
+  font-family: 'IstokWeb-Regular';
+  src: url('./fonts/IstokWeb-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'IstokWeb-Bolt';
+  src: url('./fonts/IstokWeb-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'IstokWeb-BoltItalic';
+  src: url('./fonts/IstokWeb-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'IstokWeb-Italic';
+  src: url('./fonts/IstokWeb-Italic.ttf') format('truetype');
 }
 
 /* Colors */
@@ -27,7 +42,7 @@
 /* Style */
 
 body {
-  font-family: "IstokWeb-Regular", sans-serif;
+  font-family: 'IstokWeb-Regular', sans-serif;
   background-color: var(--main-bg);
   color: var(--main-text);
   font-weight: 400;
@@ -42,7 +57,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "KyivType Sans", sans-serif;
+  font-family: 'KyivType Sans', sans-serif;
   margin: 0;
 }
 

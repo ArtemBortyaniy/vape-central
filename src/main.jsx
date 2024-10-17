@@ -8,7 +8,7 @@ import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/Vape-Central/">
+    <BrowserRouter basename="/vape-central/">
       <App />
     </BrowserRouter>
   </React.StrictMode>
