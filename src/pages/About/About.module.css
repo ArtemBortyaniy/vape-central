@@ -1,0 +1,112 @@
+.container{
+    width: 375px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.title{
+    margin-top: 48px;
+    margin-bottom: 56px;
+    font-family: 'IstokWeb-Regular', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+
+    color: var(--main-text);
+}
+
+.subTitle{
+    font-family: 'KyivType Sans', sans-serif;
+    font-weight: 200;
+    font-size: 32px;
+    line-height: 40px;
+
+    color: var(--main-text);
+
+    margin-bottom: 32px;
+}
+
+.text{
+    font-family: 'IstokWeb-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+
+    color: var(--main-text);
+}
+
+.indent{
+    margin-bottom: 24px;
+}
+
+.textList{
+    font-family: 'IstokWeb-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: var(--main-text);
+}
+
+.list{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style:disc;
+
+    padding-left: 30px;
+}
+
+.textTitle{
+    margin-top: 40px;
+
+    font-family: 'IstokWeb-Regular', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: var(--main-text);
+width: 100%;
+
+}
+
+.textTitle1{
+    margin-top: 40px;
+
+    font-family: 'IstokWeb-Regular', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+}
+
+.textEnd{
+    margin-top: 108px;
+    margin-bottom: 148px;
+
+    font-family: 'IstokWeb-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.textTitle::after{
+    content: "";
+    display: inline-block;
+    width: 248px;
+    height: 1px; 
+    background-color: var(--main-text); 
+    margin-left: -10px; 
+
+}
+
+.textTitle1::after{
+    content: "";
+    display: inline-block;
+    width: 168px;
+    height: 1px; 
+    background-color: var(--main-text); 
+    margin-left: -10px; 
+
+}

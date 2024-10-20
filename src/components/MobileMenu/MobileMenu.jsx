@@ -1,62 +1,39 @@
 import css from "./MobileMenu.module.css";
-import sprite from "../../assets/symbol-defs.svg";
 
-import { useEffect } from "react";
 
-const MobileMenu = ({ isOpen, onClose }) => {
-  const handleBackdropClick = (e) => {
-    if (e.target.classList.contains(css.backdrop)) {
-      onClose();
-    }
-  };
+const MobileMenu = () => {
 
-  useEffect(() => {
-    if (isOpen) {
-      document.body.classList.add("no-scroll");
-    } else {
-      document.body.classList.remove("no-scroll");
-    }
-
-    return () => {
-      document.body.classList.remove("no-scroll");
-    };
-  }, [isOpen]);
 
   return (
-    <div
-      className={`${css.backdrop} ${isOpen ? css.backdropVisible : ""}`}
-      onClick={handleBackdropClick}
-    >
-      <div className={css.mobileMenuWrap}>
-        <svg className={css.icon}>
-          <use href={`${sprite}#icon-Search--Streamline-Platinum-1`} />
-        </svg>
-        <ul>
-          <li>
-            <p>Одноразові POD-системи</p>
+
+      <div className={css.container}>
+
+        <ul className={css.list}>
+          <li className={css.item}>
+            Одноразові POD-системи
           </li>
-          <li>
-            <p>Рідини</p>
+          <li className={css.item}>
+            Рідини
           </li>
-          <li>
-            <p>Пристрої</p>
+          <li className={css.item}>
+            Пристрої
           </li>
-          <li>
-            <p>Комплектуючі</p>
+          <li className={css.item}>
+            Комплектуючі
           </li>
-          <li>
-            <p>Системи нагрівання</p>
+          <li className={css.item}>
+            Системи нагрівання
           </li>
-          <li>
-            <p>Снюс</p>
+          <li className={css.item}>
+            Снюс
           </li>
         </ul>
-        <div>
-          <p>Підтримка</p>
-          <p>Доставка</p>
+        <div className={css.box}>
+          <p className={css.item1}>Підтримка</p>
+          <p className={css.item1}>Доставка</p>
         </div>
       </div>
-    </div>
+
   );
 };
 

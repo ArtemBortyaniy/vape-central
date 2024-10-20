@@ -10,17 +10,19 @@ import SharedLayout from "./SharedLayout";
 
 //components
 import Home from "../../pages/Home/Home";
+import About from "../../pages/About/About";
 
 function App() {
-  console.log("App component rendered");
   return (
-    <div>
+    <>
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Home />} />
+          <Route path="/about" element={<About />} />
+
         </Route>
       </Routes>
-    </div>
+    </>
   );
 }
 

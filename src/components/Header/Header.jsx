@@ -6,29 +6,34 @@ import sprite from "../../assets/symbol-defs.svg";
 //style
 import css from "./Header.module.css";
 
-import { useState } from "react";
+import { Modal } from "../Modal/ModalContainer/ModalContainer";
+import { useDispatch } from "react-redux";
+import {  openModal } from "../../redux/modals/modalsSlice";
+
 
 const Header = () => {
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const handleToggleMobileMenu = () => {
-    console.log("Toggle Mobile Menu");
-    setMobileMenuOpen(!isMobileMenuOpen);
+  const dispatch = useDispatch();
+
+  const handleOpenModal = (modalName) => {
+ 
+      dispatch(openModal(modalName));
   };
 
-  const handleMobileMenuClose = () => {
-    setMobileMenuOpen(false);
-  };
+
   return (
     <div className="layoutContainer">
       <header>
         <div className={css.container}>
-          <div onClick={handleToggleMobileMenu}>
+          <div onClick={() => handleOpenModal('menu')}>
             <svg className={css.iconMenu}>
               <use href={`${sprite}#icon-Subject--Streamline-Unicons`} />
             </svg>
           </div>
           <div className={css.shopName}>Vape Central</div>
+
+
+
           <div>
             <UserMenu></UserMenu>
           </div>
@@ -36,8 +41,12 @@ const Header = () => {
         <div className={css.titleContainer}>
           <h1 className={css.title}>Vape Central</h1>
         </div>
-        <MobileMenu isOpen={isMobileMenuOpen} onClose={handleMobileMenuClose} />
+
       </header>
+
+      <Modal modalName='menu'  align={'centerTop'}>
+  <MobileMenu/>
+            </Modal>
     </div>
   );
 };

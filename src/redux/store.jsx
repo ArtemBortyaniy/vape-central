@@ -9,9 +9,12 @@ import {
   PURGE,
   REGISTER,
 } from "redux-persist";
+import { modalsSlice } from "./modals/modalsSlice";
 
 export const store = configureStore({
-  reducer: {},
+  reducer: {
+    modals: modalsSlice.reducer
+  },
   middleware(getDefaultMiddleware) {
     return getDefaultMiddleware({
       serializableCheck: {
