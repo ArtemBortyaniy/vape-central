@@ -1,6 +1,6 @@
-import css from "./Fotter.module.css";
+import css from './Fotter.module.css';
 //svg
-import sprite from "../../assets/symbol-defs.svg";
+import sprite from '../../assets/symbol-defs.svg';
 
 const Footer = () => {
   return (

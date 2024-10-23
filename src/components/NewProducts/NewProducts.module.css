@@ -17,4 +17,11 @@
   border-radius: 8px;
   margin-top: 24px;
   margin-bottom: 24px;
+  transition: all 0.3s ease;
+}
+
+.NewProductsBtn:hover,
+.NewProductsBtn:focus {
+  background-color: #434040;
+  outline: none;
 }

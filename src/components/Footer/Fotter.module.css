@@ -11,13 +11,23 @@
 }
 
 .phone {
+  font-family: 'IstokWeb-Bolt', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 24px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.phone:hover,
+.phone:focus {
+  color: var(--accent);
+  outline: none;
 }
 
 .text {
+  font-family: 'IstokWeb-Bolt', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
@@ -62,6 +72,7 @@
 }
 
 .title {
+  font-family: 'IstokWeb-Bolt', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
@@ -78,6 +89,14 @@
   color: var(--disabled-color);
   font-size: 16px;
   line-height: 20px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.categoryLink:hover,
+.categoryLink:focus {
+  color: var(--accent);
+  outline: none;
 }
 
 .info {

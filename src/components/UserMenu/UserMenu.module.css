@@ -8,6 +8,13 @@
   height: 24px;
   fill: white;
   stroke: black;
+  transition: all 0.3s ease;
+}
+
+.icon:hover,
+.icon:focus {
+  stroke: var(--accent);
+  outline: none;
 }
 
 .iconUser {
@@ -15,4 +22,11 @@
   height: 24px;
   fill: black;
   stroke: white;
+  transition: all 0.3s ease;
+}
+
+.iconUser:hover,
+.iconUser:focus {
+  fill: var(--accent);
+  outline: none;
 }

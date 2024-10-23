@@ -1,0 +1,17 @@
+.sliderContainer {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory; /* Для того чтобы карточки прилипали при прокрутке */
+  scroll-behavior: smooth; /* Плавная прокрутка */
+  gap: 30px; /* Расстояние между карточками */
+}
+
+.sliderListItem {
+  flex: 0 0 auto; /* Гарантирует, что элемент не будет сжиматься */
+  min-width: 300px; /* Минимальная ширина карточки */
+  scroll-snap-align: start; /* Прокрутка будет останавливаться на начале каждой карточки */
+}
+
+.sliderContainer::-webkit-scrollbar {
+  display: none; /* Скрываем скролл для эстетики */
+}

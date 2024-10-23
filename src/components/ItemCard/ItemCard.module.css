@@ -6,6 +6,14 @@
   top: 14px;
   right: 77px;
   position: absolute;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.iconPosition1:hover,
+.iconPosition1:focus {
+  stroke: var(--accent);
+  outline: none;
 }
 
 .iconPosition2 {
@@ -16,6 +24,14 @@
   top: 14px;
   right: 41px;
   position: absolute;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.iconPosition2:hover,
+.iconPosition2:focus {
+  stroke: var(--accent);
+  outline: none;
 }
 
 .imgCard {
@@ -35,6 +51,7 @@
   font-size: 16px;
   line-height: 20px;
   width: 164px;
+  font-family: 'IstokWeb-Bolt', sans-serif;
 }
 
 .taste {
@@ -54,6 +71,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  font-family: 'IstokWeb-Bolt', sans-serif;
 }
 
 .btnBy {
@@ -62,6 +80,17 @@
   color: var(--main-text);
   border-radius: 8px;
   padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+.btnBy:hover,
+.btnBy:focus {
+  background-color: #d9f1af;
+  outline: none;
+}
+
+.btnBy:active {
+  background-color: var(--accent);
 }
 
 .imgContainer {
@@ -82,4 +111,45 @@
   height: 28px;
   fill: black;
   stroke: white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.icon.rotated {
+  transform: rotate(180deg);
+}
+
+.icon:hover,
+.icon:focus {
+  fill: var(--accent);
+  outline: none;
+}
+
+.dropdownWrapper {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 30px;
+  background-color: white;
+  border: 1px solid #c0baba;
+  border-radius: 8px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100px; /* Ширина выпадающего списка */
+  z-index: 10; /* Обеспечиваем, чтобы список отображался поверх других элементов */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdownItem {
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dropdownItem:hover {
+  background-color: #ebebeb;
 }
