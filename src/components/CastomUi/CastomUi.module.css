@@ -10,10 +10,6 @@
 .product {
   width: 100%;
   height: 634px;
-  background-image: url('../../assets/Img.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .lines {

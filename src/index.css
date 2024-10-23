@@ -103,6 +103,16 @@ button {
   }
 }
 
+@media (min-width: 768px) {
+  :root {
+    --container-width: 768px;
+  }
+  .layoutContainer {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
 .no-scroll {
   overflow: hidden;
 }

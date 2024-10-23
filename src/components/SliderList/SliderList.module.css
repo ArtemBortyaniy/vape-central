@@ -3,7 +3,6 @@
   overflow-x: auto;
   scroll-snap-type: x mandatory; /* Для того чтобы карточки прилипали при прокрутке */
   scroll-behavior: smooth; /* Плавная прокрутка */
-  gap: 30px; /* Расстояние между карточками */
 }
 
 .sliderListItem {

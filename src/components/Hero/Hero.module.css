@@ -1,8 +1,15 @@
 .hero {
   width: 100%;
   height: 375px;
-  background-image: url("../../assets/Hero.jpg");
+  background-image: url('../../assets/Hero.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 531px;
+    background-image: url('../../assets/Hero-tab.jpg');
+  }
 }
